@@ -1,0 +1,281 @@
+/*Cabecera*/
+*
+{
+	margin:0;
+}
+body{
+	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
+}
+img{
+	box-shadow: 2px 2px  #02010a;
+	-webkit-box-shadow: 2px 2px  #02010a;
+	-moz-box-shadow: 2px 2px  #02010a;
+}
+header{
+  /*clear: both;*/
+  background-color: #5b7989;
+  width: 99.8%;
+  height: 50px;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  position: fixed;
+  top: 0;
+	display: flex;
+	flex-direction: row;
+}
+#titulo{
+	text-align: left;
+	margin: auto;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+	width: 50%;
+}
+
+#menu{
+	width: 50%;
+	text-align: right;
+	margin: auto;
+	color: white;
+}
+#menu{
+	width: 50%;
+	text-align: right;
+	margin: auto;
+}
+#menu a{
+	color: white;
+}
+#a3{
+	text-decoration: none;
+}
+/*
+Fin de Cabecera
+
+*/
+
+/*
+Cuerpo
+*/
+
+.fotos_retrato{
+	background-color: #d5c75f;
+	width: 900px;
+	margin: 0px auto;
+	margin-top: 51px;
+	display: flex;
+	flex-direction: column;
+}
+.parte1{
+
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+.parte2{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.imagen1{
+	text-align: center;
+	margin: auto;
+	width: 33%;
+
+}
+.imagen2{
+	text-align: center;
+	margin: auto;
+	width: 33%;
+}
+.imagen3{
+	text-align: center;
+	margin: auto;
+	width: 33%;
+}
+.imagen4{
+	padding-top: 20px;
+	text-align: center;
+	margin: auto;
+	width: 33%;
+
+}
+.imagen5{
+	padding-top: 20px;
+	text-align: center;
+	margin: auto;
+	width: 33%;
+}
+.imagen6{
+	padding-top: 20px;
+	text-align: center;
+	margin: auto;
+	width: 33%;
+}
+.imagen1 img{
+	-webkit-filter:blur(10px);
+	filter: blur(10px;);
+}
+.imagen2 img, .imagen4 img, .imagen6 img{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%)
+}
+.imagen3 img{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%;);
+}
+/*
+Fin de Cuerpo
+*/
+
+footer{
+	display: flex;
+	flex-direction: row;
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+}
+footer > div {
+padding: 10px;
+width: 25%;
+}
+footer ul{
+	padding-left: 0px;
+	list-style-type: none;
+}
+footer a{
+	text-decoration: none;
+}
+
+
+
+/*
+PARA  movil
+*/
+@media (min-width:525px)and (max-width:900px){
+	#titulo{
+		text-align: left;
+		margin: auto;
+	  color: white;
+	  text-shadow: 2px 2px 2px #02010a;
+		width: 70%;
+	}
+
+	#menu{
+		width: 30%;
+		text-align: right;
+		margin: auto;
+		color: white;
+	}
+	.fotos_retrato {
+		width: auto;
+		margin: 0 auto;
+	  margin-top: 50px;
+	  display: flex;
+	  flex-direction: column;
+	}
+	footer{
+		font-size: 12px;
+	}
+}
+
+
+@media (max-width:524px){
+	header{
+	  background-color: #5b7989;
+	  width: 99.8%;
+	  height: 110px;
+	  border-radius: 10px 10px 0px 0px;
+	  -moz-border-radius: 10px 10px 0px 0px;
+	  -webkit-border-radius: 10px 10px 0px 0px;
+	  position: fixed;
+	  top: 0;
+		z-index:100;
+		display: flex;
+	  flex-direction: column;
+	}
+	#titulo{
+		width: 100%;
+		height: 75%;
+	  color: white;
+		text-align: center;
+	  text-shadow: 2px 2px 2px #02010a;
+	}
+
+	#menu{
+		text-align: center;
+		height: 25%;
+		width: 100%;
+	}
+	#menu a{
+	  color: white;
+	  text-decoration: none;
+	}
+	.fotos_retrato {
+		margin: auto;
+		width: auto;
+	  margin-top: 110px;
+	  display: flex;
+	  flex-direction: column;
+	}
+	.parte1{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.parte2{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.imagen1{
+		padding-top: 20px;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+
+	}
+	.imagen2{
+		padding-top: 20px;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+	}
+	.imagen3{
+		padding-top: 20px;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+	}
+	.imagen4{
+		padding-top: 20px;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+	}
+	.imagen5{
+		padding-top: 20px;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+	}
+	.imagen6{
+		padding-top: 20px;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+	}
+	footer > div {
+	text-align: left;
+	padding: 10px;
+	width: 100%;
+	}
+}
